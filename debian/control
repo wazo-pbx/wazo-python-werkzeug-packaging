@@ -1,0 +1,42 @@
+Source: wazo-python-werkzeug-packaging
+Section: python
+Priority: optional
+Maintainer: Wazo Maintainers <dev@wazo.community>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all (>= 2.7),
+               python-setuptools,
+               python3-all,
+               python3-setuptools
+Standards-Version: 3.9.6
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.5
+Homepage: http://werkzeug.pocoo.org/
+
+Package: python-werkzeug
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: collection of utilities for WSGI applications (Python 2.x)
+ The Web Server Gateway Interface (WSGI) is a standard interface between web
+ server software and web applications written in Python.
+ .
+ Werkzeug is a lightweight library for interfacing with WSGI. It features
+ request and response objects, an interactive debugging system and a powerful
+ URI dispatcher. Combine with your choice of third party libraries and
+ middleware to easily create a custom application framework.
+ .
+ This package contains the Python 2.x module.
+
+Package: python3-werkzeug
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: collection of utilities for WSGI applications (Python 3.x)
+ The Web Server Gateway Interface (WSGI) is a standard interface between web
+ server software and web applications written in Python.
+ .
+ Werkzeug is a lightweight library for interfacing with WSGI. It features
+ request and response objects, an interactive debugging system and a powerful
+ URI dispatcher. Combine with your choice of third party libraries and
+ middleware to easily create a custom application framework.
+ .
+ This package contains the Python 3.x module.

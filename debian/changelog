@@ -1,0 +1,5 @@
+wazo-python-werkzeug-packaging (0.14.1-1~wazo1) wazo-dev-stretch; urgency=medium
+
+  * Initial release
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Fri, 26 Oct 2018 08:33:02 -0400

@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
+VERSION ?= $(shell cat VERSION)
+URL_DOWNLOAD = "https://github.com/pallets/werkzeug/archive/${VERSION}.tar.gz"
+export PYBUILD_NAME=werkzeug
+export PYBUILD_DISABLE=test
+export PYBUILD_SYSTEM=distutils
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+
+override_dh_auto_clean:
+	if [ -f setup.py ]; then dh_auto_clean; fi
+
+
+.PHONY: get-orig-source
+
+get-orig-source:
+	@echo "# Downloading..."
+	wget -nv -T10 -t3 $(URL_DOWNLOAD) -O ../$(PKG)_$(VERSION).orig.tar.gz

@@ -1,0 +1,11 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Werkzeug
+Upstream-Source: http://werkzeug.pocoo.org/download
+
+Files: *
+Copyright: Copyright © 2007 by the Pallets team, see AUTHORS for more details.
+License: BSD-3-Clause
+
+Files: debian/*
+Copyright: 2016-2017 The Wazo Authors  (see the AUTHORS file)
+License: GPL-3
