@@ -19,4 +19,4 @@ override_dh_auto_clean:
 
 get-orig-source:
 	@echo "# Downloading..."
-	wget -nv -T10 -t3 $(URL_DOWNLOAD) -O ../$(PKG)_$(VERSION).orig.tar.gz
+	wget -nv -T10 -t3 $(URL_DOWNLOAD) -O ../$(PKG)_$(VERSION)+wazo.orig.tar.gz

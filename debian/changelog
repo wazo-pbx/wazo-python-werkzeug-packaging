@@ -1,3 +1,9 @@
+wazo-python-werkzeug-packaging (0.14.1+wazo-1) wazo-dev-stretch; urgency=medium
+
+  * Include patch from https://github.com/pallets/werkzeug/commit/098a689e8cbe39540ba361dba122069ba6200bd6
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Fri, 26 Oct 2018 08:34:03 -0400
+
 wazo-python-werkzeug-packaging (0.14.1-1~wazo1) wazo-dev-stretch; urgency=medium
 
   * Initial release
