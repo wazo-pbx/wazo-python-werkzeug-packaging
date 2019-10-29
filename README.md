@@ -4,6 +4,10 @@ Debian packaging for [werkzeug](https://github.com/pallets/werkzeug) used in Waz
 The only purpose of this repackaging is to add the following commit:
 https://github.com/pallets/werkzeug/commit/098a689e8cbe39540ba361dba122069ba6200bd6
 
+## Reason
+
+* Include a patch to never send content-length for 204
+
 ## Upgrading
 
 To upgrade werkzeug:
