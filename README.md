@@ -1,8 +1,6 @@
 # wazo-python-werkzeug-packaging
 
 Debian packaging for [werkzeug](https://github.com/pallets/werkzeug) used in Wazo.
-The only purpose of this repackaging is to add the following commit:
-https://github.com/pallets/werkzeug/commit/098a689e8cbe39540ba361dba122069ba6200bd6
 
 ## Reason
 
