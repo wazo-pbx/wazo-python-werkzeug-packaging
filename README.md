@@ -6,7 +6,7 @@ https://github.com/pallets/werkzeug/commit/098a689e8cbe39540ba361dba122069ba6200
 
 ## Reason
 
-* Include a patch to never send content-length for 204
+* Include a patch to never send content-length for 204. This patch is backported from python-werkzeug 0.16.
 
 ## Upgrading
 
