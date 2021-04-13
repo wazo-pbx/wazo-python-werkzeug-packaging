@@ -36,3 +36,4 @@ tar -xvf ../wazo-python-werkzeug-packaging_*.orig.tar.gz  --strip 1
 vim <filename.py>
 dpkg-source --commit
 dpkg-buildpackage -us -uc
+
